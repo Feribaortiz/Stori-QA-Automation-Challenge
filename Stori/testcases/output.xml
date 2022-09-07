@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.8.5 on win32)" generated="20220906 19:41:30.291" rpa="false" schemaversion="3">
+<suite id="s1" name="Prueba" source="C:\Users\rockd\Documents\GitHub\Stori-QA-Automation-Challenge\Stori\testcases\prueba.robot">
+<test id="s1-t1" name="TC-Select mexico" line="5">
+<kw name="Abrir Navegador" library="Abrir_WebSite">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220906 19:41:30.564" endtime="20220906 19:41:30.564"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220906 19:41:30.564" endtime="20220906 19:41:30.564"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220906 19:41:30.565" level="INFO">Opening browser 'GC' to base url 'https://rahulshettyacademy.com/AutomationPractice/'.</msg>
+<status status="PASS" starttime="20220906 19:41:30.564" endtime="20220906 19:41:39.467"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220906 19:41:39.467" endtime="20220906 19:41:39.800"/>
+</kw>
+<status status="PASS" starttime="20220906 19:41:30.564" endtime="20220906 19:41:39.800"/>
+</kw>
+<kw name="Select mexico" library="Abrir_WebSite">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${Me_locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220906 19:41:39.801" endtime="20220906 19:41:40.021"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Me_locator}</arg>
+<arg>${Me}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220906 19:41:40.021" level="INFO">Typing text 'Me' into text field '//input[@id="autocomplete"]'.</msg>
+<status status="PASS" starttime="20220906 19:41:40.021" endtime="20220906 19:41:40.717"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${Mexico_locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220906 19:41:40.717" endtime="20220906 19:41:41.339"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Mexico_locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220906 19:41:41.339" level="INFO">Clicking element '//div[contains(text(),'Mexico')]'.</msg>
+<status status="PASS" starttime="20220906 19:41:41.339" endtime="20220906 19:41:41.783"/>
+</kw>
+<status status="PASS" starttime="20220906 19:41:39.800" endtime="20220906 19:41:41.783"/>
+</kw>
+<status status="PASS" starttime="20220906 19:41:30.563" endtime="20220906 19:41:41.783"/>
+</test>
+<test id="s1-t2" name="TC-Dropdown" line="9">
+<kw name="Abrir Navegador" library="Abrir_WebSite">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220906 19:41:41.785" endtime="20220906 19:41:41.785"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220906 19:41:41.785" endtime="20220906 19:41:44.107"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220906 19:41:44.108" level="INFO">Opening browser 'GC' to base url 'https://rahulshettyacademy.com/AutomationPractice/'.</msg>
+<status status="PASS" starttime="20220906 19:41:44.107" endtime="20220906 19:41:51.849"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220906 19:41:51.849" endtime="20220906 19:41:52.181"/>
+</kw>
+<status status="PASS" starttime="20220906 19:41:41.785" endtime="20220906 19:41:52.181"/>
+</kw>
+<kw name="Dropdown" library="Abrir_WebSite">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${List}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220906 19:41:52.182" endtime="20220906 19:41:52.405"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${List}</arg>
+<arg>${Option2}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220906 19:41:52.406" level="INFO">Selecting options from selection list '//select[@id="dropdown-class-example"]' by value option2.</msg>
+<status status="PASS" starttime="20220906 19:41:52.405" endtime="20220906 19:41:53.883"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${List}</arg>
+<arg>${Option3}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220906 19:41:53.883" level="INFO">Selecting options from selection list '//select[@id="dropdown-class-example"]' by value option3.</msg>
+<status status="PASS" starttime="20220906 19:41:53.883" endtime="20220906 19:41:55.370"/>
+</kw>
+<status status="PASS" starttime="20220906 19:41:52.181" endtime="20220906 19:41:55.370"/>
+</kw>
+<status status="PASS" starttime="20220906 19:41:41.784" endtime="20220906 19:41:55.370"/>
+</test>
+<test id="s1-t3" name="TC-Switch other Window" line="12">
+<kw name="Abrir Navegador" library="Abrir_WebSite">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220906 19:41:55.372" endtime="20220906 19:41:55.372"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220906 19:41:55.372" endtime="20220906 19:41:57.638"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220906 19:41:57.639" level="INFO">Opening browser 'GC' to base url 'https://rahulshettyacademy.com/AutomationPractice/'.</msg>
+<status status="PASS" starttime="20220906 19:41:57.638" endtime="20220906 19:42:05.925"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220906 19:42:05.925" endtime="20220906 19:42:06.256"/>
+</kw>
+<status status="PASS" starttime="20220906 19:41:55.372" endtime="20220906 19:42:06.256"/>
+</kw>
+<kw name="Switch a other Window" library="Abrir_WebSite">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SwitchWindow}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220906 19:42:06.257" endtime="20220906 19:42:06.470"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${SwitchWindow}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220906 19:42:06.470" level="INFO">Clicking button '//button[@id="openwindow"]'.</msg>
+<status status="PASS" starttime="20220906 19:42:06.470" endtime="20220906 19:42:07.595"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academy</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20220906 19:42:07.595" endtime="20220906 19:42:12.322"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220906 19:42:12.322" endtime="20220906 19:42:12.641"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${WaitOtherWindows}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220906 19:42:12.641" endtime="20220906 19:42:16.586"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${WaitOtherWindows}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220906 19:42:16.586" level="INFO">Clicking button '//button[contains(text(),'NO THANKS')]'.</msg>
+<status status="PASS" starttime="20220906 19:42:16.586" endtime="20220906 19:42:17.670"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${MoneyBack}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220906 19:42:17.670" endtime="20220906 19:42:18.364"/>
+</kw>
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<arg>${MoneyBack}</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20220906 19:42:18.364" endtime="20220906 19:42:18.776"/>
+</kw>
+<kw name="Close Window" library="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" starttime="20220906 19:42:18.776" endtime="20220906 19:42:19.046"/>
+</kw>
+<status status="PASS" starttime="20220906 19:42:06.256" endtime="20220906 19:42:19.046"/>
+</kw>
+<status status="PASS" starttime="20220906 19:41:55.371" endtime="20220906 19:42:19.047"/>
+</test>
+<test id="s1-t4" name="TC-Switch other Tab Example" line="15">
+<kw name="Abrir Navegador" library="Abrir_WebSite">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220906 19:42:19.049" endtime="20220906 19:42:19.049"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220906 19:42:19.049" endtime="20220906 19:42:21.311"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220906 19:42:21.312" level="INFO">Opening browser 'GC' to base url 'https://rahulshettyacademy.com/AutomationPractice/'.</msg>
+<status status="PASS" starttime="20220906 19:42:21.311" endtime="20220906 19:42:29.252"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220906 19:42:29.252" endtime="20220906 19:42:29.571"/>
+</kw>
+<status status="PASS" starttime="20220906 19:42:19.048" endtime="20220906 19:42:29.571"/>
+</kw>
+<kw name="Switch Tab Example" library="Abrir_WebSite">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SwitchTabWindow}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220906 19:42:29.572" endtime="20220906 19:42:29.794"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SwitchTabWindow}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220906 19:42:29.794" level="INFO">Clicking element '//a[@id="opentab"]'.</msg>
+<status status="PASS" starttime="20220906 19:42:29.794" endtime="20220906 19:42:30.257"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>Rahul Shetty Academy</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20220906 19:42:30.257" endtime="20220906 19:42:33.030"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220906 19:42:33.030" endtime="20220906 19:42:33.238"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${WaitConsulting}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220906 19:42:33.238" endtime="20220906 19:42:33.462"/>
+</kw>
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<arg>${WaitConsulting}</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20220906 19:42:33.462" endtime="20220906 19:42:33.892"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>${OUTPUTDIR}/Switch-Tab-Example.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220906 19:42:34.352" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Switch-Tab-Example.png"&gt;&lt;img src="Switch-Tab-Example.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220906 19:42:33.892" endtime="20220906 19:42:34.352"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>Practice Page</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20220906 19:42:34.352" endtime="20220906 19:42:36.034"/>
+</kw>
+<status status="PASS" starttime="20220906 19:42:29.572" endtime="20220906 19:42:36.034"/>
+</kw>
+<status status="PASS" starttime="20220906 19:42:19.048" endtime="20220906 19:42:36.035"/>
+</test>
+<test id="s1-t5" name="TC-Switch To Alert" line="18">
+<kw name="Abrir Navegador" library="Abrir_WebSite">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220906 19:42:36.038" endtime="20220906 19:42:36.038"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220906 19:42:36.038" endtime="20220906 19:42:38.309"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220906 19:42:38.310" level="INFO">Opening browser 'GC' to base url 'https://rahulshettyacademy.com/AutomationPractice/'.</msg>
+<status status="PASS" starttime="20220906 19:42:38.309" endtime="20220906 19:42:46.432"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220906 19:42:46.432" endtime="20220906 19:42:46.763"/>
+</kw>
+<status status="PASS" starttime="20220906 19:42:36.037" endtime="20220906 19:42:46.763"/>
+</kw>
+<kw name="Switch To Alert" library="Abrir_WebSite">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SwitchAlert}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220906 19:42:46.764" endtime="20220906 19:42:46.985"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${SwitchAlert}</arg>
+<arg>${Stori}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220906 19:42:46.985" level="INFO">Typing text 'Stori Card' into text field '//input[@id="name"]'.</msg>
+<status status="PASS" starttime="20220906 19:42:46.985" endtime="20220906 19:42:47.673"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${Alert}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220906 19:42:47.673" level="INFO">Clicking button '//input[@id="alertbtn"]'.</msg>
+<status status="PASS" starttime="20220906 19:42:47.673" endtime="20220906 19:42:48.326"/>
+</kw>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<var>${messagee}</var>
+<doc>Handles the current alert and returns its message.</doc>
+<msg timestamp="20220906 19:42:48.326" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<msg timestamp="20220906 19:42:48.946" level="INFO">${messagee} = Hello Stori Card, share this practice page and share your knowledge</msg>
+<status status="PASS" starttime="20220906 19:42:48.326" endtime="20220906 19:42:48.946"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${messagee}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220906 19:42:48.946" level="INFO">Hello Stori Card, share this practice page and share your knowledge</msg>
+<status status="PASS" starttime="20220906 19:42:48.946" endtime="20220906 19:42:48.946"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Should Be Equal As Strings</arg>
+<arg>${messagee}</arg>
+<arg>${message}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${messagee}</arg>
+<arg>${message}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<msg timestamp="20220906 19:42:48.947" level="FAIL">Hello Stori Card, share this practice page and share your knowledge != Hello Stori Card, Are you sure you want to confirm?</msg>
+<status status="FAIL" starttime="20220906 19:42:48.947" endtime="20220906 19:42:48.948"/>
+</kw>
+<status status="PASS" starttime="20220906 19:42:48.946" endtime="20220906 19:42:48.948"/>
+</kw>
+<status status="PASS" starttime="20220906 19:42:46.763" endtime="20220906 19:42:48.948"/>
+</kw>
+<status status="PASS" starttime="20220906 19:42:36.037" endtime="20220906 19:42:48.948"/>
+</test>
+<status status="PASS" starttime="20220906 19:41:30.293" endtime="20220906 19:42:48.950"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="Prueba">Prueba</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
